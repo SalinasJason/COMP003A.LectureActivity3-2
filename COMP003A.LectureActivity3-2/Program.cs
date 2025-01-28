@@ -22,6 +22,19 @@
                 // display the multiplication table
                 Console.WriteLine($"{i} x {num} = {i * num}");
             }
+
+            // Display table in reverse using a while loop
+            Console.WriteLine("\nReversed Multiplaction Table:");
+            int reverse = 10; // start at 10
+            // loop to generate the multiplication table in reverse
+            while (reverse > 0)
+            {
+                // display the multiplication table in reverse
+                Console.WriteLine($"{reverse} x {num} = {reverse * num}");
+                // decrement reverse
+                reverse--;
+            }
+
         }
     }
 }
