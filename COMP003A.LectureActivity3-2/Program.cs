@@ -35,6 +35,21 @@
                 reverse--;
             }
 
+            // Display fibonacci series using a do-while loop
+            Console.WriteLine("\nFibonacci Series:");
+            int firstNumber = 0, secondNumber = 1, nextNumber; // first two numbers
+            Console.Write($"{firstNumber} {secondNumber} "); // display first two numbers
+            int count = 2; // count starts at 2
+            // loop to generate the next 10 numbers in the series
+            do
+            {
+                nextNumber = firstNumber + secondNumber; // calculate nect number
+                Console.Write($"{nextNumber} "); // display next number
+                firstNumber = secondNumber; // update first number
+                secondNumber = nextNumber; // udate second number
+                count++; // increment count
+            }   while (count < 10); // loop until count reaches 10
+
         }
     }
 }
